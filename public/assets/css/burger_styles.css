@@ -1,0 +1,42 @@
+body {
+    margin: 0 auto;
+    background: yellow;
+}
+h1 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 54px;
+    padding: 30px;
+    color: red;
+}
+h2 {
+    font-family: 'Fredoka One', cursive;
+    padding: 20px 0px 10px 0px;
+    color: red;
+}
+img {
+    height: 345px;
+    width: 365px;
+}
+p,
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button {
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: bisque;
+}
+input {
+    border-radius: 5px;
+}
+#devoured-section {
+    text-align: right;
+    color: gray;
+}
+#add-burger {
+    text-align: center;
+}
+#ready-to-eat {
+    color: black;
+}
