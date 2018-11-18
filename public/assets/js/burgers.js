@@ -9,9 +9,9 @@ $(function() {
         }
 
         // Send the PUT request
-        $.ajax('/api/burgers/' + id, {
-            type: 'PUT',
-            data: newDevourState
+        $.ajax({
+            method: "PUT",
+            url: "api/burger/" + id
         }).then(function() {
             console.log('changed devour to', newDevour);
             // Reload the page to get the updated list
@@ -26,7 +26,7 @@ $(function() {
         var newBurger = {
         burger_name: $("#burg").val().trim(),
         };
-
+        console.log(newBurger);
         // Send the POST request.
         $.ajax("/api/burgers", {
         type: "POST",

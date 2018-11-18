@@ -1,7 +1,7 @@
 <p id="devoured-list">
-	{{id}}. {{burger_name}}
+	{{dataValues.id}}. {{dataValues.burger_name}}
     {{#if devoured}}
-        <button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+        <button class="change-devour" data-id="{{dataValues.id}}" data-newdevour="{{dataValues.devoured}}">
             Devour!
         </button>
     {{/if}}
