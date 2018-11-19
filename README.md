@@ -1,5 +1,7 @@
 # Sequelized Eat-Da-Burger
 
+Experience here: [Sequelized Eat-Da-Burger](https://intense-brushlands-23599.herokuapp.com/)
+
 Sequelized Eat-Da-Burger is a restuarant app that allows users to do the following:
 
 * Input the name of a burger they would like to eat
@@ -8,7 +10,9 @@ Sequelized Eat-Da-Burger is a restuarant app that allows users to do the followi
 * Clicking the "Devour It!" button will move the burger to the "Devoured Burgers" section on the right
 * All burgers and their state are stored in a database
 
-Tech Used:
+The Eat-Da-Burger app utilizes a Sequelize ORM.
+
+**Tech Used:**
 * MySQL
 * Sequelize
 * Node.js
@@ -20,8 +24,10 @@ Tech Used:
 * Bootstrap
 * CSS
 
-The Eat-Da-Burger app utilizes a Sequelize ORM.
+&nbsp;
 
+Designed, built, and maintained by Brian Fitzgerald
 
+Email: brianjfitzgerald@gmail.com
 
-Engineered by Brian Fitzgerald
+&#169; 2018
