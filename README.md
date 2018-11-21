@@ -2,6 +2,8 @@
 
 Experience here: [Sequelized Eat-Da-Burger](https://intense-brushlands-23599.herokuapp.com/)
 
+![image](public/assets/img/screenshot-burger.png)
+
 Sequelized Eat-Da-Burger is a restuarant app that allows users to do the following:
 
 * Input the name of a burger they would like to eat
@@ -30,4 +32,4 @@ Designed, built, and maintained by Brian Fitzgerald
 
 Email: brianjfitzgerald@gmail.com
 
-&#169; 2018
+Copyright &#169; 2018
