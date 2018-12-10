@@ -1,40 +1,43 @@
-var db = require('../models');
+var db = require("../models");
 
 module.exports = function(app) {
-    app.get('/', function(req, res) {
-        db.Burger.findAll().then(function(results) {
-            var hbsObject = {
-                burgers: results
-            }
-            console.log(hbsObject);
-            res.render('index', hbsObject)
-        });
+  app.get("/", function(req, res) {
+    db.Burger.findAll().then(function(results) {
+      var hbsObject = {
+        burgers: results
+      };
+      console.log(hbsObject);
+      res.render("index", hbsObject);
     });
+  });
 
-    app.post('/api/burgers', function(req, res) {
-        // console.log(req.body);
-        db.Burger.create({
-            burger_name: req.body.burger_name,
-            // devoured: false
-        }).then(function(results) {
-            console.log(results);
-            res.json(results);
-        });
+  app.post("/api/burgers", function(req, res) {
+    // console.log(req.body);
+    db.Burger.create({
+      burger_name: req.body.burger_name
+      // devoured: false
+    }).then(function(results) {
+      console.log(results);
+      res.json(results);
     });
+  });
 
-    app.put('/api/burger/:id', function(req, res) {
-        db.Burger.update({
-            devoured: true
-        }, {
-            where: {
-                id: req.params.id
-            }
-        }).then(function(results) {
-            console.log(results);
-            res.json(results);
-        })
-    })
-}
+  app.put("/api/burger/:id", function(req, res) {
+    db.Burger.update(
+      {
+        devoured: true
+      },
+      {
+        where: {
+          id: req.params.id
+        }
+      }
+    ).then(function(results) {
+      console.log(results);
+      res.json(results);
+    });
+  });
+};
 
 // var express = require('express');
 
